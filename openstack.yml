@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: true
+  roles:
+    - role: ntp
+    - role: openstack
+    - role: sqld
+    - role: messq
+    - role: memc
+    - role: etcd
